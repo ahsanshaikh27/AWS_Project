@@ -1,0 +1,28 @@
+# 🔧 2. Create IAM User with Custom Permissions via Inline Policy
+
+
+Steps:
+
+1.IAM → Users → Click your user → Permissions → Add Inline Policy
+
+2.Create JSON File
+
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+
+
+
+3.Save policy with name EC2ViewPolicy
+
+✅ Use: This user can only view EC2 resources, not modify or launch.

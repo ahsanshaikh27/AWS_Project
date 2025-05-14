@@ -1,0 +1,16 @@
+🔧 1. Create a New IAM User with Programmatic Access
+Steps:
+
+1.AWS Console → IAM → Users → Add User
+
+2.Username: developer-user
+
+3.Access type: ✅ Programmatic access (for CLI, SDK)
+
+4.Permissions: Attach policy directly → Select AmazonS3ReadOnlyAccess
+
+5.Review and Create User
+
+6.Save the Access Key ID and Secret Access Key
+
+✅ Use: This user can now access S3 via AWS CLI for read-only purposes.
